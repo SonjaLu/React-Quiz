@@ -14,6 +14,7 @@ function handleSelectAnswer(selectedAnswer) {
 }
 
   return (
+    <div id="quiz">
     <div id="question">
     <h2>
       {QUESTIONS[activeQuestionIndex].text}
@@ -25,6 +26,7 @@ function handleSelectAnswer(selectedAnswer) {
             </li>
         ))}
     </ul>
+    </div>
     </div>
   );
 }
