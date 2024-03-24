@@ -36,6 +36,7 @@ if (quizIsComplete) {
     <div id="quiz">
     <Question 
     key={activeQuestionIndex}
+    index={activeQuestionIndex}
      onSelectAnswer={handleSelectAnswer}
      onSkipAnswer={handleSkipAnswer}/>
     </div>
