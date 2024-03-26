@@ -1,5 +1,5 @@
 import quizCompleteImg from '../assets/quiz-complete.png';
-import Questions from '../questions.js';
+import QUESTIONS from '../questions.js';
 
 export default function Summary({ userAnswers}) {
    const skippedAnswers = userAnswers.filter((answer) => answer === null); 
@@ -18,11 +18,11 @@ const wrongAnswersShare = 100 - skippedAnswersShare - correctAnswersShare;
                 <span className="text">skipped</span> 
             </p>
             <p>
-               <span className="number">{correctAnwersShare}%</span>
+               <span className="number">{correctAnswersShare}%</span>
                 <span className="text">answered correctly</span> 
             </p>
             <p>
-               <span className="number">{wrongAnswerShare}%</span>
+               <span className="number">{wrongAnswersShare}%</span>
                 <span className="text">answered incorrectly</span> 
             </p>
         </div>
